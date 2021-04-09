@@ -81,7 +81,7 @@ class Pybot:
          with open(filename,"w") as f:
             f.write(self.text_area.get(0.0,END))
 
-   def clear_chat():
+   def clear_chat(self):
       if messagebox.askyesno("PyBot Says","Do you really want ot delete recent Chats"):
          self.text_area.delete(0.0,END)
          
